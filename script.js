@@ -1,6 +1,4 @@
-// Script to add interactivity and animations
 
-// Smooth scroll for anchor links
 document.querySelectorAll('a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -14,7 +12,7 @@ document.querySelectorAll('a').forEach(anchor => {
     });
 });
 
-// Animate search input on focus
+
 const searchInput = document.querySelector('main input');
 searchInput.addEventListener('focus', () => {
     searchInput.style.transition = '0.3s ease-in-out';
@@ -25,7 +23,7 @@ searchInput.addEventListener('blur', () => {
     searchInput.style.width = '300px';
 });
 
-// Logo hover effect
+
 const logo = document.querySelector('.logo img');
 logo.addEventListener('mouseover', () => {
     logo.style.transform = 'scale(1.1)';
