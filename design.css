@@ -1,4 +1,4 @@
-/* General reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +6,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* Body styling */
+
 body {
     background: url('/img/bg.png') no-repeat center center/cover; /* Single background image */
     color: #333;
@@ -14,7 +14,7 @@ body {
     height: 100vh; /* Ensure body takes full height */
 }
 
-/* Header styling */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -49,16 +49,16 @@ header ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main section styling */
+
 main {
     padding: 20px;
     position: relative;
-    z-index: 1; /* Ensure the content stays above the background */
+    z-index: 1; 
 }
 
-/* First section */
+
 main section:first-child {
-    color: white; /* Text color remains white */
+    color: white; 
     height: calc(100vh - 150px);
     display: flex;
     flex-direction: column;
@@ -85,7 +85,7 @@ main section:first-child input {
     font-size: 16px;
 }
 
-/* Second section */
+
 main section:nth-child(2) {
     background-color:white;
     padding: 20px;
@@ -131,7 +131,7 @@ main section:nth-child(2) .features div p {
     color: #777;
 }
 
-/* Footer styling */
+
 footer {
     text-align: center;
     padding: 10px;
@@ -140,7 +140,7 @@ footer {
     font-size: 14px;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
     from {
         opacity: 0;
