@@ -8,10 +8,10 @@
 
 
 body {
-    background: url('/img/bg.png') no-repeat center center/cover; /* Single background image */
+    background: url('/img/bg.png') no-repeat center center/cover; 
     color: #333;
     line-height: 1.6;
-    height: 100vh; /* Ensure body takes full height */
+    height: 100vh; 
 }
 
 
@@ -22,7 +22,7 @@ header {
     padding: 10px 20px;
     background-color: #ff4d4d;
     color: white;
-    z-index: 1; /* Ensure header stays above other elements */
+    z-index: 1; 
 }
 
 .logo img {
