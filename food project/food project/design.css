@@ -1,0 +1,155 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background: url('/img/bg.png') no-repeat center center/cover; /* Single background image */
+    color: #333;
+    line-height: 1.6;
+    height: 100vh; /* Ensure body takes full height */
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    z-index: 1; /* Ensure header stays above other elements */
+}
+
+.logo img {
+    height: 50px;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 15px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+    position: relative;
+    z-index: 1; 
+}
+
+
+main section:first-child {
+    color: white; 
+    height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main section:first-child img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+main section:first-child p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main section:first-child input {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+
+
+main section:nth-child(2) {
+    background-color:white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+main section:nth-child(2) h2 {
+    font-size: 28px;
+    color: #ff4d4d;
+    margin-bottom: 15px;
+}
+
+main section:nth-child(2) p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+main section:nth-child(2) .features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+main section:nth-child(2) .features div {
+    background-color: #ffe5e5;
+    padding: 15px;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+}
+
+main section:nth-child(2) .features div h3 {
+    font-size: 20px;
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+main section:nth-child(2) .features div p {
+    font-size: 16px;
+    color: #777;
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    font-size: 14px;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+header, main, footer {
+    animation: fadeIn 2s ease-in-out;
+}
